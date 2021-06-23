@@ -43,7 +43,7 @@ tableData.forEach((witness) => {
 /////////////////////
 // GOAL 2: If someone clicks the button, then get value of what they entered and search it
 ////////////////////
-/*
+
 // Identify the button 
 var button = d3.select("#filter-btn"); 
 
@@ -54,12 +54,13 @@ button.on("click", function() {
     tbody.html("");
 
     // Select HTML properties 
-    var input2 = d3.select("#datetime");
-    var inputvalue = input2.property("value");
-    console.log(inputvalue);
+    var input1 = d3.select("#datetime");
+    var value = input1.property("value");
+    console.log(value);
 
     // Filter the values based on what the user enters 
-    var filterValues = tabledata.filter(witness => witness.datetime === inputValue)
+    var filteredValues = tableData.filter(witness => witness.datetime === value)
+    console.log(filteredValues)
 
     // Show only the filtered values when button is clicked
     filteredValues.forEach((witness) => {
@@ -77,9 +78,9 @@ button.on("click", function() {
 
             // Add content to cells
             cell.text(value); 
-        };
+        });
     }); 
-}); */
+}); 
 
 
 
