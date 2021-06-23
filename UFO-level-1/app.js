@@ -23,8 +23,23 @@ var tbody = d3.select("tbody");
 // Identify the button 
 var button = d3.select("#filter-btn"); 
 
-// Create event listener 
-button.on
+// Create event listener and create a function to find value of what user entered 
+button.on("click", function() {
+
+    var input2 = d3.select("#datetime").property("value");
+    console.log(input2);
+
+
+
+
+
+
+
+
+
+
+
+});
 
 
 
