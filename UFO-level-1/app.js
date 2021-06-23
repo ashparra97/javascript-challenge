@@ -53,14 +53,14 @@ button.on("click", function() {
     // Empty out previous table 
     tbody.html("");
 
-    // Select HTML properties 
+   // Select HTML properties 
     var input1 = d3.select("#datetime");
     var value = input1.property("value");
     console.log(value);
 
     // Filter the values based on what the user enters 
-    var filteredValues = tableData.filter(witness => witness.datetime === value)
-    console.log(filteredValues)
+    var filteredValues = tableData.filter(witness => witness.datetime === value);
+    //console.log(filteredValues);
 
     // Show only the filtered values when button is clicked
     filteredValues.forEach((witness) => {
@@ -69,7 +69,7 @@ button.on("click", function() {
         var row = tbody.append("tr"); 
         
         // Use object entries to console.log each UFO witness report but only for the filtered values 
-        Object.entries(witness).forEach(function([key, value]) {
+        Object.entries(witness).forEach(([key, value]) => {
             console.log(key, value);
 
             // Add a cell for each value now that we have rows and values 
