@@ -1,5 +1,5 @@
 // Test that console log is working
-console.log("hi there")
+//console.log("hi there")
 
 // Get data from from data.js
 var tableData = data;
@@ -34,8 +34,6 @@ tableData.forEach((witness) => {
 
         // Add content to cells
         cell.text(value); 
-
-
     });
 });
 
@@ -54,25 +52,8 @@ button.on("click", function() {
     var inputvalue = input2.property("value");
     console.log(inputvalue);
     
-
-
-
-
-
-
-
-
-
-
-
 });
 
 
 
 
-
-
-
-
-
-// Listen for events and serach through data/time column to find rows that match user input 
