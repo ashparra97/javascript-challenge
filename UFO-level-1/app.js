@@ -1,3 +1,5 @@
+// Study partner: Jason Wang
+
 // Test that console log is working
 //console.log("hi there")
 
@@ -48,6 +50,7 @@ var button = d3.select("#filter-btn");
 // Create event listener and create a function to find value of what user entered 
 button.on("click", function() {
 
+    // 
     var input2 = d3.select("#datetime");
     var inputvalue = input2.property("value");
     console.log(inputvalue);
