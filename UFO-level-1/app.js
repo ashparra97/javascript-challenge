@@ -60,7 +60,7 @@ button.on("click", function() {
     // Filter the values based on what the user enters 
     var filteredValues = tableData.filter(witness => witness.datetime === input1);
     console.log(filteredValues);
-    //console.log(filteredValues);
+    
 
     // Show only the filtered values when button is clicked
     filteredValues.forEach((witness) => {
